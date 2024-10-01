@@ -1,4 +1,4 @@
-package com.example.clientproject;
+package com.ulfunhy.clientproject;
 
 import org.junit.Test;
 

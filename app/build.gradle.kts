@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.clientproject"
+    namespace = "com.ulfunhy.clientproject"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.clientproject"
+        applicationId = "com.ulfunhy.clientproject"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
