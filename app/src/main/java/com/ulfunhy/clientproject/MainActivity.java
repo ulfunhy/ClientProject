@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText LoginID, LoginPw;
+    EditText LoginID;
     Button LoginBtn;
 
     @Override
@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         LoginID = findViewById(R.id.LoginID);
-        LoginPw = findViewById(R.id.LoginPw);
 
         LoginBtn = findViewById(R.id.LoginBtn);
 
@@ -41,10 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mainIntent = new Intent(MainActivity.this, LoginActivity.class);
                 String loginID = MainActivity.this.LoginID.getText().toString();
-                String loginPw = MainActivity.this.LoginPw.getText().toString();
                 mainIntent.putExtra("ID",loginID);
-                mainIntent.putExtra("Password",loginPw);
-
 
                 startActivity(mainIntent);
             }
